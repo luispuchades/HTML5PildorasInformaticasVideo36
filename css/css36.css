@@ -1,0 +1,18 @@
+/**CSS Document
+ * Curso: HMTL5 - Pildoras Informáticas - API CANVAS VI
+ * Origin: Video31.html ==> Modificar tipo de líneas
+ */
+
+body {
+    background: #fff;
+}
+
+section {
+    margin: auto;
+    position: relative;
+    width: 800px;
+}
+
+#lienzo {
+    border: 1px #F00 solid;
+}
