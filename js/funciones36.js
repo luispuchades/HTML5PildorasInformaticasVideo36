@@ -46,6 +46,15 @@ function manipularImagen(e) {
             info_imagen.data[posicion] = 255 - info_imagen.data[posicion];
             info_imagen.data[posicion + 1] = 255 - info_imagen.data[posicion + 1];
             info_imagen.data[posicion + 2] = 255 - info_imagen.data[posicion + 2];
+
+/** Para pasar los rojos a verde-negativo, los verde a azul-negativo y los
+ * azules a rojo-negativo:
+ *
+ *            info_imagen.data[posicion] = 255 - info_imagen.data[posicion + 1];
+ *            info_imagen.data[posicion + 1] = 255 - info_imagen.data[posicion + 2];
+.*            info_imagen.data[posicion + 2] = 255 - info_imagen.data[posicion];
+ */
+
         }
     }
 // Le decimos que añada los datos que acabamos de definir con la función putImageData
